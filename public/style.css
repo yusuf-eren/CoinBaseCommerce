@@ -1,128 +1,146 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
 }
 
-:root {
-    --soft-blue: hsl(215, 51%, 70%);
+:root{
+    --blue:hsl(215, 51%, 70%);
     --cyan: hsl(178, 100%, 50%);
-  
-    /* ### Neutral */
-  
-    --main-bg: hsl(217, 54%, 11%);
-    --card-bg: hsl(216, 50%, 16%);
-    --line: hsl(215, 32%, 27%);
-    --white: hsl(0, 0%, 100%);
-  }
+    --mainBG:  hsl(217, 54%, 11%);
+    --cardBG: hsl(216, 50%, 16%);
+    --line:hsl(215, 32%, 27%);
+
+}
 
 body{
-    background-color: var(--main-bg);
-    color: rgb(247, 247, 247);
-    font-family: "Outfit", sans-serif;
-    font-size: 1rem;
+    min-height: 100vh;
+    background-color: var(--mainBG);
     display: flex;
     justify-content: center;
-    margin-top: 20px;
-}
-
-
-
-.container{
-    background-color: var(--card-bg);
-    border-radius: 10px;
-    width: 300px;
-    height: 520px;
-    padding: 15px;
-    margin-top: 150px;
-}
-
-.nft_photo{
-    position: relative;
-}
-
-.container h2{
-    font-weight: 700;
-    color: white;
-    margin: 10px;
-    font-size: 20px;
-    position: relative;
-    right: 8px;
-}
-
-.container ul{
-    display: flex;
     align-items: center;
-    justify-content: space-between;
-    margin: 20px;
 }
 
-.avatar{
+
+.card{
+    height: 46rem;
+    width: 25rem;
+    background-color: var(--cardBG);
+    border-radius: 15px;
     display: flex;
-    justify-content: flex-start;
-    border-top: 2px solid rgb(75, 74, 74);
-}
-
-.avatar img{
-    width: 30px;
-    border: 2.5px solid white;
-    border-radius: 50%;
-}
-
-
-li{
-    display: flex;
-}
-
-li img{
-    margin-right: 10px;
-}
-
-img{
-    max-width: 100%;
-}
-
-ul{
-    list-style: none;
-}
-
-p{
-    font-weight: 300;
-    font-size: 13px;
-    color: var(--soft-blue);
-}
-
-
-
-.avatarindiv{
-    display: flex;
-    margin-top: 12px;
+    flex-direction: column;
     align-items: center;
+    position: relative;
+    
+}
+
+.main{
+    width: 22rem;
+    height: 22rem;
+    border-radius: 1rem;
+    margin: 1rem;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 1rem;
     gap: 1rem;
 }
 
-.avatarindiv span{
-    font-weight: 800;
-    color: var(--white);
+.text h2 {
+    color: white;
+    font-family: 'Outfit', sans-serif;;
 }
 
-.buy_button{
+.text p{
+    color: var(--blue);
+    font-size: large;
+    letter-spacing: 1.5px;
+    line-height: 1.7rem;
+    /* padding-right: 0.1rem; */
+}
+
+.eth_price{
+    width: 20rem;
     display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+    gap: 0.5rem;
+
+}
+
+.eth{
     position: relative;
-    justify-content: center;
-    top:5px;
+    left: 1.3   rem;
 }
 
-.buy_button button{
-    width: 90px;
-    height: 35px;
-    background-color: var(--card-bg);
-    border-radius: 6px;
-    color: rgb(238, 227, 227);
-    font-size: 1rem;
+.p1 {
+    color: var(--cyan);
+    position: relative;
+    left: -2rem;
+
 }
 
-.buy_button button:hover{
+.clock{
+    position: relative;
+    left: 2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+}
+
+.p2{
+    color: var(--blue);
+    position: relative;
+    top: 1px;
+}
+
+hr{
+    position: relative;
+    top: 10px;
+    width: 21rem;
+    opacity: 0.5;
+}
+
+button{
+    padding: 1rem;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: rgb(250, 100, 250);
+    color: white;
+    position: relative;
+    top: 1.5rem;
+    transition: 0.6s;
+}
+button:hover{
+    opacity: 0.5;
     cursor: pointer;
-    background: hsl(217, 13%, 19%);
+    transform: rotateX(360deg)
+}
+.avatarSection{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    top: 2rem;
+}
+.avatarSection img{
+    width: 4rem;
+    height: 4rem;
+}
+.avatarSection p{
+  color: aliceblue; 
+}
+
+.avatarSection span{
+    color: var(--blue);
+}
+
+/* EYE FOR LINK HOVER */
+
+.opacity{
+    opacity: 0.5;
 }
