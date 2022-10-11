@@ -25,6 +25,7 @@ app.get("/buy-emir", async (req, res) => {
       pricing_type: "fixed_price",
     }),
   };
+});
 
 app.get("/buy-efe", async (req, res) => {
   const reqUrl = "https://api.commerce.coinbase.com/charges/";
