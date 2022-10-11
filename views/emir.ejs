@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../public/images/favicon-32x32.png"
+    />
+    <title>NFT BUY</title>
+    <link rel="stylesheet" href="../public/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <article class="nft_photo">
+        <a
+          href="https://opensea.io/assets/ethereum/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/4473"
+          ><img
+            src="https://img.seadn.io/files/65eb8b7c31df72da55e81e4fbb56d7db.png?fit=max&w=1000"
+            id="anafoto"
+            alt=""
+        /></a>
+      </article>
+      <article>
+        <h2>Hooligan #2641</h2>
+        <p>Our Hooligan collection promotes balance and calm.</p>
+        <ul id="liste">
+          <li>
+            <img src="../public/images/icon-ethereum.svg" alt="" /> 0.99 ETH
+          </li>
+          <li>
+            <img src="../public/images/icon-clock.svg" alt="" /> 3 days left
+          </li>
+        </ul>
+      </article>
+      <article class="avatar">
+        <div class="avatarindiv">
+          <img src="../public/images/image-avatar.png" id="avatar" alt="" />
+          <p>Creation of <span>Emir Demirgezer </span></p>
+        </div>
+      </article>
+      <form action="<%=payment_link%>">
+        <div class="buy_button"><button type="submit">Buy NFT</button></div>
+      </form>
+    </div>
+  </body>
+</html>
