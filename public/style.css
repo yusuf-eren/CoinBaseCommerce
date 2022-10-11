@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+  
+    /* ### Neutral */
+  
+    --main-bg: hsl(217, 54%, 11%);
+    --card-bg: hsl(216, 50%, 16%);
+    --line: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+  }
+
+body{
+    background-color: var(--main-bg);
+    color: rgb(247, 247, 247);
+    font-family: "Outfit", sans-serif;
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+.container{
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    width: 300px;
+    height: 520px;
+    padding: 15px;
+    margin-top: 150px;
+}
+
+.nft_photo{
+    position: relative;
+}
+
+.container h2{
+    font-weight: 700;
+    color: white;
+    margin: 10px;
+    font-size: 20px;
+    position: relative;
+    right: 8px;
+}
+
+.container ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.avatar{
+    display: flex;
+    justify-content: flex-start;
+    border-top: 2px solid rgb(75, 74, 74);
+}
+
+.avatar img{
+    width: 30px;
+    border: 2.5px solid white;
+    border-radius: 50%;
+}
+
+
+li{
+    display: flex;
+}
+
+li img{
+    margin-right: 10px;
+}
+
+img{
+    max-width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+p{
+    font-weight: 300;
+    font-size: 13px;
+    color: var(--soft-blue);
+}
+
+
+
+.avatarindiv{
+    display: flex;
+    margin-top: 12px;
+    align-items: center;
+    gap: 1rem;
+}
+
+.avatarindiv span{
+    font-weight: 800;
+    color: var(--white);
+}
+
+.buy_button{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    top:5px;
+}
+
+.buy_button button{
+    width: 90px;
+    height: 35px;
+    background-color: var(--card-bg);
+    border-radius: 6px;
+    color: rgb(238, 227, 227);
+    font-size: 1rem;
+}
+
+.buy_button button:hover{
+    cursor: pointer;
+    background: hsl(217, 13%, 19%);
+}

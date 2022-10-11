@@ -27,6 +27,7 @@ app.get("/buy-emir", async (req, res) => {
   };
 });
 
+
 app.get("/buy-efe", async (req, res) => {
   const reqUrl = "https://api.commerce.coinbase.com/charges/";
   const options = {
@@ -48,6 +49,12 @@ app.get("/buy-efe", async (req, res) => {
   const response = await fetch(reqUrl, options);
   const data = await response.json();
   res.render("efe", {
+
+  const response = await fetch(reqUrl, options);
+  const data = await response.json();
+
+  res.render("emir", {
+
     eth_address: data["data"]["addresses"]["ethereum"],
     payment_link: data["data"]["hosted_url"],
   });
