@@ -1,12 +1,16 @@
 const express = require("express");
 const fetch = require("node-fetch");
+const path = require("path");
 const app = express();
 
+app.use("/public", express.static(path.join(__dirname, "public")));
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("/", async (req, res) => {
+app.get("/", async (req, res) => {});
+
+app.get("/buy-efe", async (req, res) => {
   const reqUrl = "https://api.commerce.coinbase.com/charges/";
   const options = {
     method: "POST",
@@ -17,7 +21,7 @@ app.get("/", async (req, res) => {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      local_price: { amount: 100, currency: "TRY" },
+      local_price: { amount: 0.041, currency: "ETH" },
       redirect_url: "http://localhost:3000/accepted",
       cancel_url: "http://localhost:3000/cancelled",
       pricing_type: "fixed_price",
@@ -25,11 +29,8 @@ app.get("/", async (req, res) => {
   };
 
   const response = await fetch(reqUrl, options);
-
-  //console.log(await response.json());
   const data = await response.json();
-  console.log(data);
-  res.render("index", {
+  res.render("efe", {
     eth_address: data["data"]["addresses"]["ethereum"],
     payment_link: data["data"]["hosted_url"],
   });
