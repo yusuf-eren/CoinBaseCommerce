@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../public/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../public/style1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>NFT preview card component</title>
+
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="image">
+        <img class="main" src="/public/images/image-equilibrium.jpg" alt="" />
+      </div>
+      <div class="text">
+        <h2>Equilibrium #3429</h2>
+        <p>Our Equilibrium collection promotes balance and calm.</p>
+      </div>
+      <div class="eth_price">
+        <img
+          class="eth"
+          src="../public/images/icon-ethereum.svg"
+          alt="ethclass"
+        />
+        <p class="p1">0.041 ETH</p>
+        <img class="clock" src="../public/images/icon-clock.svg" alt="clock" />
+        <p class="p2">3 Days Left</p>
+      </div>
+      <hr />
+      <form action="<%=payment_link%>">
+        <div class="buy_button"><button type="submit">Buy NFT</button></div>
+      </form>
+      <div class="avatarSection">
+        <img src="../public/images/image-avatar.png" alt="avatar" />
+        <p><span>created by </span>actuallyZefe</p>
+      </div>
+    </div>
+  </body>
+</html>
