@@ -8,8 +8,6 @@ app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-app.get("/", async (req, res) => {});
-
 app.get("/buy-efe", async (req, res) => {
   const reqUrl = "https://api.commerce.coinbase.com/charges/";
   const options = {
