@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+body{
+    background-color: hsl(216, 55%, 11%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.container{
+    outline: none;
+    width: 45rem;
+    height: 15rem;
+    background-color: hsl(216, 54%, 29%);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 10px solid;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-color: pink ;
+    
+}
+
+
+a{
+    padding: 1rem;
+    text-decoration: none;
+    transition: 0.4s;
+    font-size: 1.5rem;
+    color: whitesmoke
+    
+}
+
+a:hover{
+    color: fuchsia;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.865);
+    border-radius: 10px;
+}
+a:visited{
+    color: fuchsia;
+}
+
+
+/* MAYBE SECTION 
+
+
+rgba(157, 205, 240, 0.644) 
+
+
+
+
+*/

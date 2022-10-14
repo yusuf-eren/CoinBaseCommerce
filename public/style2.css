@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
+    text-align: center;
 }
 
 :root{
@@ -113,12 +114,13 @@ button{
     color: white;
     position: relative;
     top: 1.5rem;
-    transition: 0.6s;
+    transition: 0.5s;
 }
 button:hover{
-    opacity: 0.5;
+    /* opacity: 0.5; */
     cursor: pointer;
-    transform: rotateX(360deg)
+    /* transform: rotateX(360deg); */
+    box-shadow: 0px 1px 15px rgb(250, 100, 250);
 }
 .avatarSection{
     display: flex;
