@@ -3,14 +3,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
-
+    /* scroll-behavior: smooth; */
 }
 
 body{
     background-color: hsl(216, 55%, 11%);
     min-height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
 
 
@@ -54,6 +54,7 @@ a:visited{
 a:visited:hover{
     background-color: rgba(203, 49, 203, 0.872);
 }
+
 
 
 /* MAYBE SECTION 
