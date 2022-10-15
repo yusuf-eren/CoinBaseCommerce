@@ -48,7 +48,11 @@ a:hover{
     border-radius: 10px;
 }
 a:visited{
- color: whitesmoke;
+    color: whitesmoke;
+}
+
+a:visited:hover{
+    background-color: rgba(203, 49, 203, 0.872);
 }
 
 
